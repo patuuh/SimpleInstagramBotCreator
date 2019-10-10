@@ -1,4 +1,4 @@
-# SimpleInstagramBotCreator
+# Simple Instagram Bot Creator
 
 Creates simple bots to Instagram and automatically verifies the email.
 
