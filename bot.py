@@ -1,3 +1,9 @@
+# Instagram account creator
+# Patrik Jokela 2019
+#
+# NOTE: Current problem is that instagram requires mobile phone verification
+# this code is not able to do that
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
@@ -47,6 +53,8 @@ class InstagramBot():
             
 
     def creation(self, current_proxy, account_info):
+        ''' main function used to create the account
+        '''
         account_info = account_info
         options = Options()
         options.add_argument('--proxy-server=%s' % current_proxy)
@@ -126,6 +134,8 @@ class InstagramBot():
 
 
 def getRandomIdentity(country, what):
+    ''' Greates random indentity for the bot
+    '''
     gender = random.choice(["male", "female"])
     logging.info("Gender: {}".format(gender))
     URL = "https://it.fakenamegenerator.com/gen-{}-{}-{}.php".format(
@@ -201,6 +211,8 @@ def new_account():
     return(account_info)
 
 def create_email():
+    ''' Creates 10 minute mail which is used to verify the email address
+    '''
         options = Options()
 
         #options.add_argument('headless')
