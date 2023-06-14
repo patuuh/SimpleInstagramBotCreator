@@ -1,4 +1,4 @@
-# Simple Instagram Bot Creator
+# Simple Instagram Bot Creator (DEPRECATED)
 
 Creates simple bots to Instagram and automatically verifies the email.
 
